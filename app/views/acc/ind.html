@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rh-Lab : Gestion De Ressources Humaines</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="public/favicon.ico" type="image/png-icon">
+<link rel="apple-touch-icon" href="app/views/acc/img/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="app/views/acc/img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="app/views/acc/img/apple-touch-icon-114x114.png">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="app/views/acc/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="app/views/acc/fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="app/views/acc/css/style.css">
+<link rel="stylesheet" type="text/css" href="app/views/acc/css/nivo-lightbox/nivo-lightbox.css">
+<link rel="stylesheet" type="text/css" href="app/views/acc/css/nivo-lightbox/default.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="app/views/acc/app/views/acc/js/modernizr.custom.js"></script>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-play fa-rotate-270"></i><img style="margin-top:-110px;" src="app/views/acc/grh.png"></a> </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="intro-text">
+          <h1 >rh lab</h1>
+          <p>La GRH sans limites </p>
+          <a href="?p=connexion" class="btn btn-custom btn-lg page-scroll">Accéder a l'application</a> </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Pourquoi RH Lab ?</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-6"> <img style="margin-top: -15px;"src="app/views/acc/grh2.jpg" class="img-responsive" alt=""> </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="about-text">
+          <p> L'application permet une gestion optimale des employés , plus rien ne peut vous échapper !</p>
+          <p> Fini les congés qui se superposent ! Notre application permet de voir le planning des congés et de générer des congés pour vos employés </p>
+          <p> Les recrutements n'auront jamais été aussi faciles , avec une vue permanente sur tous les candidats et leurs informations, le parfait candidat au bout d'un seul click</p>
+          <p> Appropriez-vous l'application ! Avec de grandes possibilités de personnalisation, modifiez-le selon vos goûts et vos préférences  </p>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Qui sommes-nous ?</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <div class="about-text" style="color: rgba(255,255,255,0.9);">
+        <p> L'equipe 19 est un petit groupe de jeunes développeurs</p>
+        <p> Motivés et détérminés !</p>
+        <p> Etudiants en 2CPI à l'Ecole Supérieure Nationale d'Informatique (ESI ex: INI) </p>
+        <p> Encadrés par l'équipe pédagogique de l'ESI </p>
+
+
+       </div>
+    </div>
+
+        </div>
+
+      </div>
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Contactez-nous</h2>
+      <hr>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+      <form name="sentMessage" id="contactForm" novalidate>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Nom" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <p class="help-block text-danger"></p>
+        </div>
+        <div id="success"></div>
+        <button type="submit" class="btn btn-default btn-lg">Envoyer</button>
+      </form>
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa fa-google"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="container text-center">
+    <div class="fnav">
+      <p>Copyright &copy; Equipe 19</a></p>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="app/views/acc/js/jquery.1.11.1.js"></script>
+<script type="text/javascript" src="app/views/acc/js/bootstrap.js"></script>
+<script type="text/javascript" src="app/views/acc/js/SmoothScroll.js"></script>
+<script type="text/javascript" src="app/views/acc/js/nivo-lightbox.js"></script>
+<script type="text/javascript" src="app/views/acc/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="app/views/acc/js/jqBootstrapValidation.js"></script>
+<script type="text/javascript" src="app/views/acc/js/contact_me.js"></script>
+<script type="text/javascript" src="app/views/acc/js/main.js"></script>
+</body>
+</html>
