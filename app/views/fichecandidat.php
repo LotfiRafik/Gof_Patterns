@@ -9,33 +9,33 @@ if($_GET['p'] === 'upcandidat')
 <div class="col-md-10">
 <h6 class="titre"> Fiche Candidat </h6>
 
-<form  method="post" action=<?php echo'?p=upcandidat&id='.$array[0]->id ?>>
+<form  method="post" action=<?php echo'?p=upcandidat&id='.$this->array[0]->id ?>>
  <div class="form-row fform">
  <h4 class="col-md-12 " style ="border-top-left-radius:15px; border-top-right-radius:15px;background-color:#A7E8A7;padding-bottom:5px;font-size:20px;text-align: center;" >Informations candidat </h4>
 
    <div class="form-group centrage col-md-3">
      <label for="inputnom">Nom</label>
-     <input type="text" class="form-control formu1" id="inputnom"  value='<?php echo $array[0]->nom ?>' name="nom" required >
+     <input type="text" class="form-control formu1" id="inputnom"  value='<?php echo $this->array[0]->nom ?>' name="nom" required >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputprenom">Prénom</label>
-     <input type="text" class="form-control formu1" id="inputprenom"  value='<?php echo $array[0]->prenom ?>' name='prenom' required>
+     <input type="text" class="form-control formu1" id="inputprenom"  value='<?php echo $this->array[0]->prenom ?>' name='prenom' required>
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputtel">Numéro de téléphone</label>
-     <input type="tel" class="form-control formu1" id="inputtel" value='<?php echo $array[0]->telephone ?>' name="telephone" required>
+     <input type="tel" class="form-control formu1" id="inputtel" value='<?php echo $this->array[0]->telephone ?>' name="telephone" required>
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputmail">Adresse mail</label>
-     <input type="email" class="form-control formu1" id="inputmail" value='<?php echo $array[0]->email ?>' name="email" required>
+     <input type="email" class="form-control formu1" id="inputmail" value='<?php echo $this->array[0]->email ?>' name="email" required>
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputposte">Poste désiré</label>
-     <input type="text" class="form-control formu1" id="inputaposte" value='<?php echo $array[0]->poste ?>'  name="poste" required>
+     <input type="text" class="form-control formu1" id="inputaposte" value='<?php echo $this->array[0]->poste ?>'  name="poste" required>
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputexp">Experience</label>
-     <input type="text" class="form-control formu1" id="inputexp" value='<?php echo $array[0]->experience ?>'  name="experience" required>
+     <input type="text" class="form-control formu1" id="inputexp" value='<?php echo $this->array[0]->experience ?>'  name="experience" required>
    </div>
  </div>
  <div class="form-row fform">
@@ -43,27 +43,27 @@ if($_GET['p'] === 'upcandidat')
 
    <div class="form-group centrage col-md-3">
      <label for="inputdateentr">Date entretien</label>
-     <input type="date" class="form-control formu1" id="inputdateentr" value='<?php echo $array[0]->da_entretien ?>' name="da_entretien" required >
+     <input type="date" class="form-control formu1" id="inputdateentr" value='<?php echo $this->array[0]->da_entretien ?>' name="da_entretien" required >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputsalaire">Salaire désiré</label>
-     <input type="number" class="form-control formu1" id="inputsalaire" value='<?php echo $array[0]->salaire ?>' name="salaire" required>
+     <input type="number" class="form-control formu1" id="inputsalaire" value='<?php echo $this->array[0]->salaire ?>' name="salaire" required>
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputstatut">Statut</label>
-     <input type="text" class="form-control formu1" id="inputstatut" value='<?php echo $array[0]->statut ?>' name="statut" >
+     <input type="text" class="form-control formu1" id="inputstatut" value='<?php echo $this->array[0]->statut ?>' name="statut" >
    </div>
    <div class="form-group centrage col-md-5">
      <label for="inputcomment">Commentaire</label>
-     <textarea class="form-control formu1" id="inputcomment" rows="2"  name="commentaire" ><?php echo $array[0]->commentaire ?></textarea>
+     <textarea class="form-control formu1" id="inputcomment" rows="2"  name="commentaire" ><?php echo $this->array[0]->commentaire ?></textarea>
    </div>
    <div class="form-group centrage col-md-5">
      <label for="inputetapesui">Etape suivante</label>
-     <textarea class="form-control formu1" id="inputetapesui" rows="2" name="etapsuiv" ><?php echo $array[0]->etapsuiv ?></textarea>
+     <textarea class="form-control formu1" id="inputetapesui" rows="2" name="etapsuiv" ><?php echo $this->array[0]->etapsuiv ?></textarea>
    </div>
    <div class="form-group centrage col-md-11">
      <label for="inputentretien">Entretien</label>
-     <textarea class="form-control formu1" id="inputentretien" rows="4" name="question" ><?php echo $array[0]->question ?></textarea>
+     <textarea class="form-control formu1" id="inputentretien" rows="4" name="question" ><?php echo $this->array[0]->question ?></textarea>
    </div>
  </div>
 <button type="submit" class="btn btn-info" style="position: relative; left: 870px;">Enregistrer</button>

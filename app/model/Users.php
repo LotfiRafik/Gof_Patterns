@@ -9,7 +9,7 @@ class Users extends \core\Model\table {
 	public function __construct()
 	{
 		parent::__construct();
-		
+		$this->observer = new Authcontroleur();
 	}
 
 	public function connexion($array=[])

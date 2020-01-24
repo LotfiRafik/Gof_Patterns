@@ -5,6 +5,9 @@ use app\model\Parametres;
 
 class Authcontroleur extends \core\Controller\controller {
 
+	public function update(){
+		
+	}
 
 	public function connexion()
 	{
@@ -40,7 +43,9 @@ class Authcontroleur extends \core\Controller\controller {
 		{
 			header('location:?p=connexion');		//Afficher formulaire de login
 		}
-		$this->render('home');										//Sinon si il a déja connecté on affiche le site
+		$parametres = new Parametres ;
+		$param = $parametres->liste();
+		$this->render('home',$param);										//Sinon si il a déja connecté on affiche le site
 	 }
 
 	 public function deconnexion()

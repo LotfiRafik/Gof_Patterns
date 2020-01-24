@@ -1,14 +1,14 @@
 
    <div class="jumbotron msgacc col-md-8 border border-info" style="position:relative;left: 150px;margin-bottom: -20px;margin-top: -20px;height:100px;background-color:#FFFFFF;">
      <div class="container">
-    <h1 class="display-4" style="position:absolute; left:270px; bottom:30px; "><?=$param[0]->msgacueille?></h1>
+    <h1 class="display-4" style="position:absolute; left:270px; bottom:30px; "><?=$this->array[0]->msgacueille?></h1>
 
 
 
   </div>
 </div>
 <br><br>
-      <?php $img = explode('?',$param[0]->imgacueille);?>
+      <?php $img = explode('?',$this->array[0]->imgacueille);?>
   <div class="row">
     <div id="carouselExampleIndicators" class="carousel slide border border-info"  style="height: 330px;width: 710px;position: relative;left:230px; top:30px; margin-bottom:50px;"data-ride="carousel">
 <?php if ($img[3]=='non') {?>

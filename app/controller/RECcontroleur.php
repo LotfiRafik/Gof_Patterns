@@ -5,6 +5,17 @@ use app\model\Parametres;
 
 class RECcontroleur extends \core\Controller\controller {
 
+	public function update(){
+
+		//Mail to candidat
+		$msg = "Votre candidature a été ajouté";
+
+		echo "mail('gl_bouchafa@esi.dz','Votre candidature a été ajouté',$msg);";
+		exit(0);
+		// send email
+		mail("gl_bouchafa@esi.dz","Candidature",$msg);	
+	}
+
 
 	public function recrutement()
 	{

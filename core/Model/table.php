@@ -3,15 +3,31 @@
 namespace core\model;
 use core\DataBase\database;
 
-abstract class table
+abstract class table implements \core\Model\subject
 {
+    protected $observer = null;
     protected $table = "";
     protected $db = null;
 
     public function __construct()
     {
-        $this->db = DataBase::getInstance();
+        $this->db = dataBase::getInstance();
     }
+
+    // Observer Pattern
+    public function notify()
+    {
+        $this->observer->update();
+    }
+    public function attach($obs)
+    {
+        $this->observer = $obs;
+    }
+    public function detach()
+    {
+        $this->observer = null;
+    }
+    //-----------------------------//
 
 	public function insert($array=[])
   	{

@@ -14,7 +14,15 @@ class Employe extends \core\Model\table {
 	//Recupuration d'un tableau d'objets ( la liste des employés)
 	public function liste()
 	{
+		//TEST PATRON SIGLETON
 		$data = $this->db->query('SELECT * FROM '.$this->table);
+		print_r($this->db->query('SELECT CONNECTION_ID()'));
+
+		$this->db->query('SELECT * FROM '.$this->table);
+		print_r($this->db->query('SELECT CONNECTION_ID()'));
+		exit(0);
+
+
 		//DATA TABLEAU D'OBJETS
 		return $data;
 	}

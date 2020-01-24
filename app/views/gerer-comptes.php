@@ -70,7 +70,7 @@
   </thead>
   <tbody>
     <?php
-      foreach ($array as $element)
+      foreach ($this->array as $element)
       {
     ?>
     <tr onclick="location.href='?p=upUserType&amp;id=<?php echo $element->id ?>'" style="cursor: pointer ; " class="lien" >

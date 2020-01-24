@@ -10,7 +10,7 @@
    <h4  style="border-top-left-radius:15px; border-top-right-radius:15px;background-color:#A7E8A7;padding-bottom:5px;font-size:20px;text-align: center;" class="col-md-12 ">Modification </h4>
    <div class="form-group centrage col-md-4" style="position:relative; left:180px;">
      <label for="inputidt">Identifiant</label>
-     <input type="text"  class="form-control formu1" id="inputidt" value="<?=$array[0]->identifiant ?>" disabled>
+     <input type="text"  class="form-control formu1" id="inputidt" value="<?=$this->array[0]->identifiant ?>" disabled>
    </div>
    <form method="post" action=<?php echo'?p=upUserPassword&id='.$_GET['id'] ?>>
  <div class="form-row">
@@ -29,8 +29,8 @@
    <div class="form-group centrage col-md-5" style="position:relative;top:-10px;left:-15px;" >
      <label for="inputprfl">Modifier type de profil</label>
      <select  class="form-control " name="type" id="inputprfl" required>
-       <option <?php if ($array[0]->type=='gestionnaire') {echo 'selected="selected"';}?> value="gestionnaire">Gestionnaire</option>
-       <option <?php if ($array[0]->type=='admin') {echo 'selected="selected"';}?> value="admin">Administrateur</option>
+       <option <?php if ($this->array[0]->type=='gestionnaire') {echo 'selected="selected"';}?> value="gestionnaire">Gestionnaire</option>
+       <option <?php if ($this->array[0]->type=='admin') {echo 'selected="selected"';}?> value="admin">Administrateur</option>
      </select>
    </div>
    <button type="submit" class="btn btn-outline-info" style="position:absolute ; right :400px; top:230px;"> Modifier</button>

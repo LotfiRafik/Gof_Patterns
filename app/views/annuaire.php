@@ -27,9 +27,9 @@
   </thead>
   <tbody>
     <?php
-    if($array != false)
+    if($this->array != false)
     {
-    foreach($array as $element)
+    foreach($this->array as $element)
     {
     ?>
     <tr>

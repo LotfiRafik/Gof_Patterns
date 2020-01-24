@@ -16,9 +16,9 @@
   </thead>
   <tbody>
     <?php
-  		if($array != false)
+  		if($this->array != false)
   		{
-  		foreach($array as $element)
+  		foreach($this->array as $element)
   		{
   	?>
     <tr onclick="location.href='?p=upcandidat&amp;id=<?php echo $element->id ?>'" style="cursor: pointer ; " class="lien" >

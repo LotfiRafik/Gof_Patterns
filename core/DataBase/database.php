@@ -11,17 +11,18 @@ class dataBase {
     private $db_user = "root";
     private $db_pass = "";
     private $pdo;
-    private static $databaseInstance = null;
+    private static $databaseInstance;
 
     private function __construct()
     {
+        
         $this->pdo=new PDO('mysql:dbname='.$this->db_name.';localhost='.$this->db_host.'',''.$this->db_user.'',''.$this->db_pass.'');
     	$this->pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
     }
 
     public static function getInstance()
     {
-        if(self::$databaseInstance == null)
+        if(is_null(self::$databaseInstance))
         {
             self::$databaseInstance = new dataBase();
         }
@@ -30,7 +31,7 @@ class dataBase {
 
     public function query($statement)
     {
-     $query=$this->pdo->query($statement);
+     $query= $this->pdo->query($statement);
      $result=$query->fetchAll(PDO::FETCH_OBJ);
      if(!empty($result))
      {

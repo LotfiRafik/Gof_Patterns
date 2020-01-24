@@ -1,6 +1,7 @@
 <?php
 
 namespace app\model;
+use app\controller\RECcontroleur;
 
 class Candidat extends \core\Model\table{
 
@@ -9,6 +10,7 @@ class Candidat extends \core\Model\table{
 	public function __construct()
 	{
 		parent::__construct();
+		$this->observer = new RECcontroleur();
 	}
 
 
@@ -28,6 +30,7 @@ class Candidat extends \core\Model\table{
 	{
 
 		$this->insert($array);
+		$this->notify();
 	}
 
 	public function modifier ($array=[],$id)

@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <?php foreach($array as $element)
+    <?php foreach($this->array as $element)
     {?>
     <tr>
       <td><?= $element->date?> </td>

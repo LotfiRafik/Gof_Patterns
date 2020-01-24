@@ -29,18 +29,18 @@
   <style>
   .sup { /** couleur de la barre sup */
 
-    <?php if($param[0]->theme == '343a40' ) $col = '868e95';
-elseif ($param[0]->theme == '005205' /*vert1*/) $col = '499866';
-elseif ($param[0]->theme == '152C55' /*bleu1*/) $col = '50668F';
-elseif ($param[0]->theme == '5D0D45' /*violet*/ ) $col = '9E4B85';
-elseif ($param[0]->theme == 'FFFB86' /*jaune*/ ) $col = 'BAB62E';
-elseif ($param[0]->theme == '791114' /*rouge*/ ) $col = 'CF6467';
-elseif ($param[0]->theme == 'FD8D90' /*rose*/ ) $col = 'E45F62';
-elseif ($param[0]->theme == '1B596D' /*indigo*/ ) $col = '4E8597';
-elseif ($param[0]->theme == '9C2245' /*magenta*/ ) $col = 'B73E61';
-elseif ($param[0]->theme == 'FFB874' /*orange*/ ) $col = 'DF9249';
-elseif ($param[0]->theme == '0D5929' /*vert2*/ ) $col = '469664';
-elseif ($param[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
+    <?php if($this->array[0]->theme == '343a40' ) $col = '868e95';
+elseif ($this->array[0]->theme == '005205' /*vert1*/) $col = '499866';
+elseif ($this->array[0]->theme == '152C55' /*bleu1*/) $col = '50668F';
+elseif ($this->array[0]->theme == '5D0D45' /*violet*/ ) $col = '9E4B85';
+elseif ($this->array[0]->theme == 'FFFB86' /*jaune*/ ) $col = 'BAB62E';
+elseif ($this->array[0]->theme == '791114' /*rouge*/ ) $col = 'CF6467';
+elseif ($this->array[0]->theme == 'FD8D90' /*rose*/ ) $col = 'E45F62';
+elseif ($this->array[0]->theme == '1B596D' /*indigo*/ ) $col = '4E8597';
+elseif ($this->array[0]->theme == '9C2245' /*magenta*/ ) $col = 'B73E61';
+elseif ($this->array[0]->theme == 'FFB874' /*orange*/ ) $col = 'DF9249';
+elseif ($this->array[0]->theme == '0D5929' /*vert2*/ ) $col = '469664';
+elseif ($this->array[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
 
 
 
@@ -60,7 +60,7 @@ elseif ($param[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
   <style>
      @media (min-width: 992px) {
        #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
-         background: #<?=$param[0]->theme?>;
+         background: #<?=$this->array[0]->theme?>;
        }
      }
   </style>
@@ -106,17 +106,17 @@ elseif ($param[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
 
         if ($_SESSION['type']=='admin')
         {?>
-        <li class="nav-item "  data-toggle="tooltip" data-placement="right" title="Parametres" >
-          <a class="nav-link nani" href="?p=param">
+        <li class="nav-item "  data-toggle="tooltip" data-placement="right" title="this->arrayetres" >
+          <a class="nav-link nani" href="?p=this->array">
             <i class="fa fa-fw fa-cogs fa-2x "></i>
-            <span class="nav-link-text">Paramètres</span>
+            <span class="nav-link-text">paramètres</span>
           </a>
         </li>
     <?php  }?>
 
       </ul>
 
-      <img src="<?=$param[0]->logo?>" alt="Avatar"  class="avatar">
+      <img src="<?=$this->array[0]->logo?>" alt="Avatar"  class="avatar">
       <style>
       .avatar
       {
@@ -163,10 +163,8 @@ elseif ($param[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
       background-color: #EEEDED;
     }
     </style>
-
   <div class="interne">
-
-    <?=$content?>
+    <?php echo $content;?>
 
 </div>
 

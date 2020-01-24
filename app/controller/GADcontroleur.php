@@ -7,6 +7,10 @@ use app\model\Parametres;
 
 class GADcontroleur extends \core\Controller\controller{
 
+	public function update(){
+		
+	}
+
 	public function administration()
 	{
 		$employe = new Employe();

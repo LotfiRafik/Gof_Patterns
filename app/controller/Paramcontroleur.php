@@ -5,16 +5,17 @@ use app\model\Users;
 
 class Paramcontroleur extends \core\Controller\controller{
 
+	public function update(){
+		
+	}
 
-		public function __construct()
+	public function __construct()
+	{
+	    if($_SESSION['type'] != 'admin')
 	    {
-	      if($_SESSION['type'] != 'admin')
-	      {
-	      	header('location:?p=home');
-	      }
+		 	header('location:?p=home');
 	    }
-
-
+	}
 
  	public function upparam()
  	{
