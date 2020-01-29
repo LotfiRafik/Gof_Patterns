@@ -106,8 +106,8 @@ elseif ($this->array[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
 
         if ($_SESSION['type']=='admin')
         {?>
-        <li class="nav-item "  data-toggle="tooltip" data-placement="right" title="this->arrayetres" >
-          <a class="nav-link nani" href="?p=this->array">
+        <li class="nav-item "  data-toggle="tooltip" data-placement="right" title="parametres" >
+          <a class="nav-link nani" href="?p=param">
             <i class="fa fa-fw fa-cogs fa-2x "></i>
             <span class="nav-link-text">paramètres</span>
           </a>
@@ -131,6 +131,7 @@ elseif ($this->array[0]->theme == 'FEFEF6' /*blanc*/ ) $col = '868e95';
       }
       </style>
       <div class="sup">
+      Patron decorator TEMPLATE 1
       <ul class="navbar-nav ml-auto">
             <style>
 

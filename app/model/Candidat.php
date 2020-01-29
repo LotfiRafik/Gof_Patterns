@@ -2,6 +2,8 @@
 
 namespace app\model;
 use app\controller\RECcontroleur;
+use app\controller\Authcontroleur;
+
 
 class Candidat extends \core\Model\table{
 
@@ -10,8 +12,9 @@ class Candidat extends \core\Model\table{
 	public function __construct()
 	{
 		parent::__construct();
-		$this->observer = new RECcontroleur();
+		$this->observer = new RECcontroleur();	
 	}
+	
 
 
 	public function liste()
@@ -26,12 +29,25 @@ class Candidat extends \core\Model\table{
 		return $data;
 	}
 
+
+
+
+
+
+
+
+
+
+
 	public function ajouter ($array=[])
 	{
 
 		$this->insert($array);
+		//Notify Observer
 		$this->notify();
 	}
+
+
 
 	public function modifier ($array=[],$id)
 	{
@@ -43,6 +59,12 @@ class Candidat extends \core\Model\table{
 	{
 		$array['id'] = $id;
 		$this->delete($array);
+	}
+	
+	public function getLastInsertedCandidat()
+	{
+		$candidat_id = $this->db->lastInsertId();
+		return ($this->listec(array("id" => $candidat_id))[0]);
 	}
 
 }

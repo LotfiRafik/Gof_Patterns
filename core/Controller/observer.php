@@ -6,7 +6,4 @@ interface observer
 {
 
     public function update();
-
-
-
 }

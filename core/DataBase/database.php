@@ -21,11 +21,13 @@ class dataBase {
     }
 
     public static function getInstance()
-    {
+    { 
+        /*Sans Singeton*/
         if(is_null(self::$databaseInstance))
         {
             self::$databaseInstance = new dataBase();
         }
+        //self::$databaseInstance = new dataBase();
         return self::$databaseInstance;
     }
 
@@ -55,5 +57,10 @@ class dataBase {
         }
     }
 
+    public function lastInsertId()
+    {
+        return $this->pdo->lastInsertId();
+    }
 
+    
 	}

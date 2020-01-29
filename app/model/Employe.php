@@ -1,5 +1,8 @@
 <?php
 namespace app\model;
+use app\controller\Authcontroleur;
+use core\DataBase\dataBase;
+
 
 class Employe extends \core\Model\table {
 
@@ -15,11 +18,14 @@ class Employe extends \core\Model\table {
 	public function liste()
 	{
 		//TEST PATRON SIGLETON
-		$data = $this->db->query('SELECT * FROM '.$this->table);
-		print_r($this->db->query('SELECT CONNECTION_ID()'));
-
+		
+		$data = dataBase::getInstance()->query('SELECT * FROM '.$this->table);
+		echo "<h2>SINGLETON</h2>";
+		echo "<br>ID de la premiere connexion : SELECT CONNECTION_ID() <br>";
+		print_r(dataBase::getInstance()->query('SELECT CONNECTION_ID()'));
 		$this->db->query('SELECT * FROM '.$this->table);
-		print_r($this->db->query('SELECT CONNECTION_ID()'));
+		echo "<br>ID de la 2éme connexion : SELECT CONNECTION_ID()<br>";
+		print_r(dataBase::getInstance()->query('SELECT CONNECTION_ID()'));
 		exit(0);
 
 

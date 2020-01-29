@@ -1,6 +1,8 @@
 <?php
 namespace app\model;
 use core\Model\table;
+use app\controller\Authcontroleur;
+
 
 
 class Salaire extends \core\Model\table{

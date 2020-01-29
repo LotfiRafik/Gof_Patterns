@@ -1,6 +1,8 @@
 <?php
 
 namespace app\model;
+use app\controller\Authcontroleur;
+
 
 class Parametres extends \core\Model\table 
 {

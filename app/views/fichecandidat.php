@@ -15,27 +15,27 @@ if($_GET['p'] === 'upcandidat')
 
    <div class="form-group centrage col-md-3">
      <label for="inputnom">Nom</label>
-     <input type="text" class="form-control formu1" id="inputnom"  value='<?php echo $this->array[0]->nom ?>' name="nom" required >
+     <input type="text" class="form-control formu1" id="inputnom"  value='<?php echo $this->array[0]->nom ?>' name="nom" d >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputprenom">Prénom</label>
-     <input type="text" class="form-control formu1" id="inputprenom"  value='<?php echo $this->array[0]->prenom ?>' name='prenom' required>
+     <input type="text" class="form-control formu1" id="inputprenom"  value='<?php echo $this->array[0]->prenom ?>' name='prenom' >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputtel">Numéro de téléphone</label>
-     <input type="tel" class="form-control formu1" id="inputtel" value='<?php echo $this->array[0]->telephone ?>' name="telephone" required>
+     <input type="tel" class="form-control formu1" id="inputtel" value='<?php echo $this->array[0]->telephone ?>' name="telephone" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputmail">Adresse mail</label>
-     <input type="email" class="form-control formu1" id="inputmail" value='<?php echo $this->array[0]->email ?>' name="email" required>
+     <input type="email" class="form-control formu1" id="inputmail" value='<?php echo $this->array[0]->email ?>' name="email" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputposte">Poste désiré</label>
-     <input type="text" class="form-control formu1" id="inputaposte" value='<?php echo $this->array[0]->poste ?>'  name="poste" required>
+     <input type="text" class="form-control formu1" id="inputaposte" value='<?php echo $this->array[0]->poste ?>'  name="poste" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputexp">Experience</label>
-     <input type="text" class="form-control formu1" id="inputexp" value='<?php echo $this->array[0]->experience ?>'  name="experience" required>
+     <input type="text" class="form-control formu1" id="inputexp" value='<?php echo $this->array[0]->experience ?>'  name="experience" >
    </div>
  </div>
  <div class="form-row fform">
@@ -43,11 +43,11 @@ if($_GET['p'] === 'upcandidat')
 
    <div class="form-group centrage col-md-3">
      <label for="inputdateentr">Date entretien</label>
-     <input type="date" class="form-control formu1" id="inputdateentr" value='<?php echo $this->array[0]->da_entretien ?>' name="da_entretien" required >
+     <input type="date" class="form-control formu1" id="inputdateentr" value='<?php echo $this->array[0]->da_entretien ?>' name="da_entretien" d >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputsalaire">Salaire désiré</label>
-     <input type="number" class="form-control formu1" id="inputsalaire" value='<?php echo $this->array[0]->salaire ?>' name="salaire" required>
+     <input type="number" class="form-control formu1" id="inputsalaire" value='<?php echo $this->array[0]->salaire ?>' name="salaire" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputstatut">Statut</label>
@@ -114,27 +114,27 @@ elseif($_GET['p'] === 'addcandidat')
 
    <div class="form-group centrage col-md-3">
      <label for="inputnom">Nom</label>
-     <input type="text" class="form-control formu1" id="inputnom"   name="nom" required >
+     <input type="text" class="form-control formu1" id="inputnom"   name="nom" d >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputprenom">Prénom</label>
-     <input type="text" class="form-control formu1" id="inputprenom"   name='prenom' required>
+     <input type="text" class="form-control formu1" id="inputprenom"   name='prenom' >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputtel">Numéro de téléphone</label>
-     <input type="tel" class="form-control formu1" id="inputtel"  name="telephone" required>
+     <input type="tel" class="form-control formu1" id="inputtel"  name="telephone" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputmail">Adresse mail</label>
-     <input type="email" class="form-control formu1" id="inputmail"  name="email" required>
+     <input type="email" class="form-control formu1" id="inputmail"  name="email" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputposte">Poste désiré</label>
-     <input type="text" class="form-control formu1" id="inputaposte"   name="poste" required>
+     <input type="text" class="form-control formu1" id="inputaposte"   name="poste" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputexp">Experience</label>
-     <input type="text" class="form-control formu1" id="inputexp" name="experience" required>
+     <input type="text" class="form-control formu1" id="inputexp" name="experience" >
    </div>
  </div>
  <div class="form-row fform">
@@ -142,11 +142,11 @@ elseif($_GET['p'] === 'addcandidat')
 
    <div class="form-group centrage col-md-3">
      <label for="inputdateentr">Date entretien</label>
-     <input type="date" class="form-control formu1" id="inputdateentr"  name="da_entretien" required >
+     <input type="date" class="form-control formu1" id="inputdateentr"  name="da_entretien" d >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputsalaire">Salaire désiré</label>
-     <input type="number" class="form-control formu1" id="inputsalaire"  name="salaire" required>
+     <input type="number" class="form-control formu1" id="inputsalaire"  name="salaire" >
    </div>
    <div class="form-group centrage col-md-3">
      <label for="inputstatut">Statut</label>

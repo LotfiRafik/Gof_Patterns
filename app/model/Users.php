@@ -1,6 +1,8 @@
 <?php
 
 namespace app\model;
+use app\controller\Authcontroleur;
+
 
 class Users extends \core\Model\table {
 
