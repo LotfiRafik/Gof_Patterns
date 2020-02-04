@@ -50,7 +50,7 @@ abstract class  Controller implements \core\Controller\observer{
 		$mail->Host       = 'smtp.sendgrid.net';                    // Set the SMTP server to send through
 		$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
     $mail->Username   = 'apikey';                     // SMTP username
-    $mail->Password   = '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';                     // SMTP username
+    $mail->Password   = '';                     // SMTP username
 		$mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 		$mail->Port       = 465;                                    // TCP port to connect to
 		$mail->setFrom($from, 'PDC DEMO');
